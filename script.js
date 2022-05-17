@@ -11,23 +11,23 @@ const submit = document.querySelector(".btn");
 
 submit.addEventListener("click", function() {
     if (userName.value === "") {
-        userName.placeholder = " alaye input your username";
-        alert("alaye input your number");
+        userName.placeholder = " kindly input your username";
+        alert("kindly input your number");
     } else if (userEmail.value === "") {
-        userEmail.placeholder = " alaye input your email address";
-        alert("alaye input your email address");
+        userEmail.placeholder = " kindly input your email address";
+        alert("invalid email address");
     } else if (userPassword.value === "") {
-        userPassword.placeholder = "guy come back here";
+        userPassword.placeholder = "your password should be equal to new password";
         alert("your password please");
     } else if (
         userNewPassword.value == "" &&
         userNewPassword.value !== userPassword.value
     ) {
         userNewPassword.placeholder = "input password ";
-        alert("alaye input your new password");
+        alert(" re-enter your password");
     } else if (userPhone.value === "") {
         userPhone.placeholder = "input you mobile phone number";
-        alert("your mobile number");
+        alert("enter your mobile number");
     } else {
         alert(
             `Dear ${userName.value} your record is with us thanks for the registration`
