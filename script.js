@@ -1,15 +1,11 @@
 "use strict";
 
-// const userName = document.getElementById("name");
-// const userEmail = document.getElementById("email");
-// const userPassword = document.getElementById("password");
-// const userNewPassword = document.getElementById("newpassword");
-// const userPhone = document.getElementById("phone");
 let userName = document.getElementById("name");
 let userEmail = document.getElementById("email");
 let userPassword = document.getElementById("password");
 let userNewPassword = document.getElementById("newpassword");
 let userPhone = document.getElementById("phone");
+const toggle = document.querySelector(".toggle");
 
 const submit = document.querySelector(".btn");
 
@@ -36,5 +32,13 @@ submit.addEventListener("click", function() {
         alert(
             `Dear ${userName.value} your record is with us thanks for the registration`
         );
+    }
+});
+
+toggle.addEventListener("click", function() {
+    if (userPassword.type === "password") {
+        userPassword.type = "text";
+    } else {
+        userPassword.type = "password";
     }
 });
