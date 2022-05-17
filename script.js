@@ -12,7 +12,7 @@ const submit = document.querySelector(".btn");
 submit.addEventListener("click", function() {
     if (userName.value === "") {
         userName.placeholder = " kindly input your username";
-        alert("kindly input your number");
+        alert("kindly input your username");
     } else if (userEmail.value === "") {
         userEmail.placeholder = " kindly input your email address";
         alert("invalid email address");
