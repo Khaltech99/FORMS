@@ -1,0 +1,182 @@
+            .button-primary {
+                align-self: center;
+            }
+            
+            form {
+                margin: 2rem;
+            }
+            
+            @media screen and (min-width:768px) {
+                form {
+                    width: 500px;
+                    margin: 2rem auto;
+                    margin-top: 4rem;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+                fieldset {
+                    width: 500px;
+                    margin: 5px auto;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .button-primary {
+                    align-self: center;
+                    display: block;
+                }
+                .user {
+                    margin-bottom: 1rem;
+                    align-self: flex-start;
+                }
+                .btn {
+                    width: 150px;
+                    cursor: pointer;
+                    font-weight: 900;
+                }
+            }
+            
+            #name:focus,
+            #email:focus,
+            #password:focus,
+            #phone:focus,
+            #newpassword:focus {
+                border: none;
+            }
+            
+            .btn {
+                background: dodgerblue;
+                border: none;
+                border-radius: 9px;
+                padding: 1rem;
+                text-align: center;
+                color: white;
+                margin-top: 2rem;
+            }
+            
+            .btn:focus {
+                background-color: blue;
+                color: white;
+            }
+            
+            .btn:hover {
+                color: dodgerblue;
+                border: 2px solid dodgerblue;
+                background: none;
+            }
+            
+            .lay {
+                display: inline;
+            }
+            
+            .flex {
+                display: flex;
+                margin-left: 1rem;
+                margin: 0;
+            }
+            
+            .male,
+            .female {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 0 1rem 0 1rem;
+            }
+            /* input[type="radio"] {
+                margin: 0;
+                background-color: green;
+            } */
+            
+            input[ type="radio"],
+            input[ type="radio"] {
+                margin-left: 0.5rem;
+                align-self: stretch;
+                margin-top: .8rem;
+                /* margin-top: 3rem; */
+            }
+            
+            label[for="male"],
+            label[for="female"] {
+                margin-left: 0;
+                align-self: flex-start;
+            }
+            
+            label[for="gender"] {
+                margin-bottom: 0;
+            }
+            
+            .input__image {
+                width: 30px;
+                height: 30px;
+                fill: grey;
+            }
+            
+            .input-group {
+                display: flex;
+                border: 1px solid lightgray;
+                width: 100%;
+                justify-content: center;
+                align-items: center;
+                border-radius: 5px;
+                padding: 0 .5rem;
+            }
+            
+            label[for="name"],
+            label[for="email"],
+            label[for="password"],
+            label[for="newpassword"],
+            label[for="phone"],
+            label[for="gender"] {
+                margin-top: .5rem;
+            }
+            
+            input#name,
+            input#email,
+            input#password,
+            input#phone,
+            input#newpassword {
+                border: grey;
+                margin: 0;
+                outline: none;
+                padding: 0;
+                border: none;
+            }
+            
+            input#name:focus {
+                border: none;
+                transition: border .3s ease-in-out;
+            }
+            
+            .opt {
+                margin-right: 0;
+            }
+            
+            input[type="password"] {
+                border: 0;
+                outline: 0;
+            }
+            /* .input-group:hover, */
+            
+            .input-group:focus,
+            .input-group:hover {
+                border: 1px solid dodgerblue;
+            }
+            
+            .input-group:focus-within {
+                outline: 2px solid dodgerblue;
+                transition: all .2s ease-in;
+            }
+            
+             ::placeholder {
+                background: none;
+                opacity: .4;
+            }
+            
+            button {
+                outline: none;
+                background-color: none;
+                background: none;
+            }

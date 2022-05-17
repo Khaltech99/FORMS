@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>forms</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css" />
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <label for="name" class="user">Username</label>
+            <div class="input-group">
+                <input type="text" placeholder="username" id="name" />
+                <img src="/icons/user.svg" alt="" class="input__image" />
+            </div>
+            <label for="email" class="user">Email</label>
+            <div class="input-group">
+                <input type="email" placeholder="group166@gmail.com" id="email" />
+                <img src="/icons/mail.svg" alt="" class="input__image" />
+            </div>
+            <label for="phone" class="user">Phone Number</label>
+            <div class="input-group">
+                <input inputmode="numeric" placeholder="07089756423" id="phone" minlength="11" maxlength="11" />
+                <img src="/icons/phone-portrait.svg" alt="" class="input__image" />
+            </div>
+
+            <label for="password" class="user">Password</label>
+            <div class="input-group">
+                <input type="password" placeholder="enter your password" id="password" />
+                <img src="/icons/eye.svg" alt="" class="input__image" />
+            </div>
+            <label for="newpassword" class="user">New-password</label>
+            <div class="input-group">
+                <input type="password" placeholder="enter your password" id="newpassword" />
+                <img src="/icons/eye.svg" alt="" class="input__image" />
+            </div>
+            <label for="gender" class="user">Gender</label>
+            <!-- male label -->
+            <div class="gender flex">
+                <img src="/icons/male.svg" alt="" class="input__image opt" />
+                <div class="male">
+                    <label for="male">Male</label
+            ><input type="radio" name="male" id="male" />
+          </div>
+          <img src="/icons/female.svg" alt="" class="input__image opt" />
+          <div class="female">
+            <label for="female">Female</label
+            ><input type="radio" name="male" id="female" />
+          </div>
+        </div>
+
+        <div class="btn">submit</div>
+      </fieldset>
+    </form>
+    <script src="/script.js"></script>
+  </body>
+</html>
