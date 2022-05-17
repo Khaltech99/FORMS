@@ -33,7 +33,7 @@ submit.addEventListener("click", function() {
         alert("enter your mobile number");
     } else {
         alert(
-            `Dear ${userName.value} your record is with us , thanks for the registration to our bootcamp`
+            `Dear ${userName.value} , your record is with us , thanks for the registration to our bootcamp`
         );
     }
 });
